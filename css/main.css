@@ -1,0 +1,46 @@
+:root {
+  --color-black: #000000;
+  --color-matte-black: #1A1A1A;
+  --color-dark-grey: #3A3A3A;
+  --color-neon-red: #FF0000;
+  --color-silver: #C0C0C0;
+  --color-white: #FFFFFF;
+  --color-dark-silver: #A9A9A9;
+
+  --font-logo: 'Orbitron', sans-serif;
+  --font-heading: 'UnifrakturCook', cursive;
+  --font-body: 'Inter', sans-serif;
+  --font-code: 'JetBrains Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-logo);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
