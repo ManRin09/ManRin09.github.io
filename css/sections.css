@@ -147,6 +147,10 @@
   color: var(--color-neon-red);
 }
 
+.proyectos-panel__list li.is-featured {
+  color: var(--color-white);
+}
+
 .proyectos-panel__note {
   font-size: 0.85rem;
   line-height: 1.6;
@@ -191,12 +195,35 @@
   transform: translateY(-4px);
 }
 
+.project-card--featured {
+  border-color: rgba(255, 0, 0, 0.5);
+  box-shadow: 0 12px 36px rgba(255, 0, 0, 0.18);
+}
+
+.project-card--featured::before {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.2), transparent 70%);
+}
+
+.project-card--featured:hover {
+  border-color: rgba(255, 0, 0, 0.7);
+  box-shadow: 0 16px 40px rgba(255, 0, 0, 0.22);
+}
+
 .project-card__head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 16px;
+}
+
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
 }
 
 .project-card__index {
@@ -215,6 +242,18 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--color-neon-red);
+}
+
+.project-card__badge--star {
+  background: rgba(255, 215, 0, 0.12);
+  border-color: rgba(255, 215, 0, 0.45);
+  color: #ffd700;
+}
+
+.project-card__badge--wip {
+  background: rgba(255, 140, 0, 0.12);
+  border-color: rgba(255, 140, 0, 0.4);
+  color: #ffb347;
 }
 
 .project-card__visual {
@@ -258,6 +297,18 @@
 .project-card__visual--green {
   background:
     linear-gradient(135deg, rgba(0, 80, 40, 0.25), rgba(0, 0, 0, 0.65)),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 2px,
+      transparent 2px,
+      transparent 6px
+    );
+}
+
+.project-card__visual--blue {
+  background:
+    linear-gradient(135deg, rgba(0, 60, 110, 0.28), rgba(0, 0, 0, 0.65)),
     repeating-linear-gradient(
       45deg,
       rgba(255, 255, 255, 0.02) 0px,
@@ -1455,6 +1506,15 @@
 
   .project-card {
     padding: 16px 14px;
+  }
+
+  .project-card__head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project-card__tags {
+    justify-content: flex-start;
   }
 
   .project-card__visual {
