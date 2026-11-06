@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio Web | Manuel Rincon</title>
-  
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/favicon.png" sizes="460x460">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
   <!-- SEO tags -->
   <meta name="description" content="Portafolio web robusto y crudo. Uniendo la pasión por el código y el poder del metal.">
 
@@ -61,11 +66,6 @@
 
     <div class="container hero-layout">
       <div class="hero-copy">
-        <span class="hero-kicker">
-          <span class="hero-dot"></span>
-          Sistema activo // Portafolio v1.0
-        </span>
-
         <h1 class="hero-headline">
           <span class="hero-headline__line">Manuel</span>
           <span class="hero-headline__line hero-headline__accent">Rincon</span>
@@ -111,14 +111,22 @@
       </div>
 
       <div class="hero-visual">
-        <div class="hero-frame">
-          <span class="hero-frame__corner hero-frame__corner--tl"></span>
-          <span class="hero-frame__corner hero-frame__corner--tr"></span>
-          <span class="hero-frame__corner hero-frame__corner--bl"></span>
-          <span class="hero-frame__corner hero-frame__corner--br"></span>
-          <span class="hero-frame__label">IMG // CORE</span>
-          <img src="assets/hero_graphic.png" alt="Console Server Guitar" class="hero-graphic">
-          <span class="hero-frame__scan" aria-hidden="true"></span>
+        <div class="hero-code" role="img" aria-label="Editor de código con TypeScript escribiéndose en vivo">
+          <div class="hero-code__bar">
+            <span></span><span></span><span></span>
+            <code><span class="hero-code__lang">TS</span> portfolio.ts</code>
+          </div>
+          <div class="hero-code__editor">
+            <div class="hero-code__gutter" id="hero-code-gutter" aria-hidden="true"></div>
+            <pre class="hero-code__body" aria-hidden="true"><code class="hero-code__output" id="hero-code-output"></code></pre>
+          </div>
+          <div class="hero-code__status">
+            <span>TypeScript · UTF-8</span>
+            <span class="hero-code__status-live">
+              <span class="hero-code__status-dot"></span>
+              <span id="hero-code-status">typing</span>
+            </span>
+          </div>
         </div>
 
         <div class="hero-terminal">
@@ -262,10 +270,6 @@
                 <span>JavaScript</span>
               </li>
               <li class="stack-item">
-                <img src="https://cdn.simpleicons.org/typescript" alt="Logo de TypeScript" loading="lazy">
-                <span>TypeScript</span>
-              </li>
-              <li class="stack-item">
                 <img src="https://cdn.simpleicons.org/angular/DD0031" alt="Logo de Angular" loading="lazy">
                 <span>Angular</span>
               </li>
@@ -288,12 +292,12 @@
                 <span>C#</span>
               </li>
               <li class="stack-item">
-                <img src="https://cdn.simpleicons.org/python" alt="Logo de Python" loading="lazy">
-                <span>Python</span>
+                <img src="https://cdn.simpleicons.org/typescript" alt="Logo de TypeScript" loading="lazy">
+                <span>TypeScript</span>
               </li>
               <li class="stack-item">
-                <img src="https://cdn.simpleicons.org/django/44B78B" alt="Logo de Django" loading="lazy">
-                <span>Django</span>
+                <img src="https://cdn.simpleicons.org/nestjs/E0234E" alt="Logo de NestJS" loading="lazy">
+                <span>NestJS</span>
               </li>
               <li class="stack-item">
                 <img src="https://cdn.simpleicons.org/express/white" alt="Logo de Express.js" loading="lazy">
@@ -348,8 +352,12 @@
             <h4 class="stack-group__title"><span>04</span> Herramientas</h4>
             <ul class="stack-grid">
               <li class="stack-item">
-                <img src="https://cdn.simpleicons.org/postman" alt="Logo de Postman" loading="lazy">
-                <span>Postman</span>
+                <img src="https://cdn.simpleicons.org/swagger" alt="Logo de Swagger" loading="lazy">
+                <span>Swagger</span>
+              </li>
+              <li class="stack-item">
+                <img src="https://cdn.simpleicons.org/scalar" alt="Logo de Scalar" loading="lazy">
+                <span>Scalar</span>
               </li>
               <li class="stack-item">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Logo de Visual Studio Code" loading="lazy">
